@@ -1,0 +1,270 @@
+/* 글로벌 스타일 */
+:root {
+    --primary-color: #8a0000;
+    --secondary-color: #f5efe0;
+    --text-color: #333;
+    --accent-color: #c79c60;
+    --background-color: #f9f7f2;
+    --artwork-shadow: rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif KR', serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* 헤더 스타일 */
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(199, 156, 96, 0.3);
+}
+
+.header-link {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.header-link:hover h1, 
+.header-link:hover .subtitle {
+    transform: translateY(-3px);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+/* 전시 소개 스타일 */
+.exhibition-intro {
+    padding: 30px 15px;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+/* 섹션 타이틀 스타일 */
+section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 20px 0;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+section h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+
+/* 갤러리 스타일 */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.artist-info {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--accent-color);
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.artwork {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--artwork-shadow);
+    transition: transform 0.3s ease;
+}
+
+.artwork:hover {
+    transform: translateY(-5px);
+}
+
+.artwork-image {
+    height: 0;
+    padding-bottom: 141.4%; /* A4 세로 비율 (1:1.414) */
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#artwork1 {
+    background-image: url('../images/artwork1.jpg');
+}
+
+#artwork2 {
+    background-image: url('../images/artwork2.jpg');
+}
+
+#artwork3 {
+    background-image: url('../images/artwork3.jpg');
+}
+
+#artwork4 {
+    background-image: url('../images/artwork4.jpg');
+}
+
+#artwork5 {
+    background-image: url('../images/artwork5.jpg');
+}
+
+.artwork-info {
+    padding: 15px;
+}
+
+.artwork-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.artwork-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.artist {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* 전시 정보 스타일 */
+.exhibition-info {
+    margin-top: 40px;
+    padding: 30px 10px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.info-item {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.info-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: center;
+}
+
+.info-item p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* 푸터 스타일 */
+footer {
+    margin-top: 50px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    border-top: 1px solid rgba(199, 156, 96, 0.3);
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+/* 반응형 디자인 */
+@media screen and (min-width: 768px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .info-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .exhibition-intro {
+        padding: 20px 10px;
+    }
+} 
