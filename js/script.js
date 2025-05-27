@@ -17,43 +17,43 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(artwork);
     });
     
-    // 작품 이미지 탭 시 확대 보기
-    artworks.forEach(artwork => {
-        const artworkImage = artwork.querySelector('.artwork-image');
-        artworkImage.addEventListener('click', function() {
-            const modal = document.createElement('div');
-            modal.className = 'modal';
-            
-            const modalContent = document.createElement('div');
-            modalContent.className = 'modal-content';
-            
-            const image = document.createElement('div');
-            image.className = 'modal-image';
-            image.style.backgroundImage = this.style.backgroundImage;
-            
-            const closeButton = document.createElement('span');
-            closeButton.className = 'close-button';
-            closeButton.innerHTML = '&times;';
-            closeButton.addEventListener('click', function() {
-                document.body.removeChild(modal);
-                document.body.style.overflow = 'auto';
-            });
-            
-            modalContent.appendChild(closeButton);
-            modalContent.appendChild(image);
-            modal.appendChild(modalContent);
-            
-            document.body.appendChild(modal);
-            document.body.style.overflow = 'hidden';
-            
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    document.body.removeChild(modal);
-                    document.body.style.overflow = 'auto';
-                }
-            });
-        });
-    });
+    // 작품 이미지 탭 시 확대 보기 기능 제거
+    // artworks.forEach(artwork => {
+    //     const artworkImage = artwork.querySelector('.artwork-image');
+    //     artworkImage.addEventListener('click', function() {
+    //         const modal = document.createElement('div');
+    //         modal.className = 'modal';
+    //         
+    //         const modalContent = document.createElement('div');
+    //         modalContent.className = 'modal-content';
+    //         
+    //         const image = document.createElement('div');
+    //         image.className = 'modal-image';
+    //         image.style.backgroundImage = this.style.backgroundImage;
+    //         
+    //         const closeButton = document.createElement('span');
+    //         closeButton.className = 'close-button';
+    //         closeButton.innerHTML = '&times;';
+    //         closeButton.addEventListener('click', function() {
+    //             document.body.removeChild(modal);
+    //             document.body.style.overflow = 'auto';
+    //         });
+    //         
+    //         modalContent.appendChild(closeButton);
+    //         modalContent.appendChild(image);
+    //         modal.appendChild(modalContent);
+    //         
+    //         document.body.appendChild(modal);
+    //         document.body.style.overflow = 'hidden';
+    //         
+    //         modal.addEventListener('click', function(e) {
+    //             if (e.target === modal) {
+    //                 document.body.removeChild(modal);
+    //                 document.body.style.overflow = 'auto';
+    //             }
+    //         });
+    //     });
+    // });
     
     // 페이지 로드 시 헤더 애니메이션
     const header = document.querySelector('header');
@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
+        /* 모달 관련 CSS 제거
         .modal {
             position: fixed;
             top: 0;
@@ -126,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .modal-image {
             width: 100%;
             height: 0;
-            padding-bottom: 141.4%; /* A4 세로 비율 (1:1.414) */
+            padding-bottom: 141.4%;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -141,6 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cursor: pointer;
             z-index: 1001;
         }
+        */
     `;
     document.head.appendChild(style);
 }); 
