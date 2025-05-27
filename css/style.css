@@ -50,7 +50,7 @@ header {
 
 h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--primary-color);
     margin-bottom: 8px;
     letter-spacing: 1px;
@@ -58,7 +58,7 @@ h1 {
 }
 
 .subtitle {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     color: var(--primary-color);
     font-style: italic;
@@ -74,7 +74,7 @@ h1 {
 }
 
 .intro-text {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.8;
 }
@@ -82,7 +82,7 @@ h1 {
 /* 섹션 타이틀 스타일 */
 section h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--primary-color);
     margin: 20px 0;
     padding-bottom: 10px;
@@ -111,7 +111,7 @@ section h2:after {
 
 .artist-info {
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: var(--accent-color);
     margin: 0 0 20px;
     font-weight: 400;
@@ -171,21 +171,21 @@ section h2:after {
 }
 
 .artwork-info h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 8px;
     color: var(--primary-color);
     font-weight: 500;
 }
 
 .artist {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--accent-color);
     margin-bottom: 8px;
     font-weight: 400;
 }
 
 .description {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     line-height: 1.6;
     font-weight: 300;
 }
@@ -213,7 +213,7 @@ section h2:after {
 }
 
 .info-item h3 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     margin-bottom: 10px;
     color: var(--primary-color);
     font-weight: 500;
@@ -221,7 +221,7 @@ section h2:after {
 }
 
 .info-item p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 300;
     text-align: center;
 }
@@ -231,7 +231,7 @@ footer {
     margin-top: 50px;
     padding: 30px 0;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--text-color);
     border-top: 1px solid rgba(199, 156, 96, 0.3);
 }
@@ -261,11 +261,11 @@ footer p {
     }
     
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 15px 0;
     }
     
@@ -294,12 +294,10 @@ footer p {
     
     .artwork-info h3 {
         font-size: 0.9rem;
-        margin-bottom: 4px;
     }
     
     .description {
-        font-size: 0.7rem;
-        line-height: 1.4;
+        font-size: 0.65rem;
     }
     
     .artist-info {
@@ -314,10 +312,9 @@ footer p {
     
     .info-item h3 {
         font-size: 0.9rem;
-        margin-bottom: 5px;
     }
     
     .info-item p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 } 
